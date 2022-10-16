@@ -8,8 +8,8 @@ def factoring():
         for number in fd:
             number = int(number)
             if number % 2 == 0:
-                    print("{}={}*{}".format(number, number // 2, 2))
-                    continue
+                print("{}={}*{}".format(number, number // 2, 2))
+                continue
             i = 3
             while i < number // 2:
                 if number % i == 0:
@@ -19,5 +19,6 @@ def factoring():
 
             if i == (number // 2) + 1:
                 print("{}={}*{}".format(number, number, 1))
+
 
 factoring()
